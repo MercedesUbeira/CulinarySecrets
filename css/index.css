@@ -1,0 +1,40 @@
+:root {
+    --white: rgb(219, 219, 219);
+}
+
+.background-image {
+    background-color: var(--white);
+    height: 100vh;
+    display: flex;
+    justify-content: left;
+    text-align: left;
+}
+
+.content {
+    max-width: 600px;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.content-section {
+    background-color: var(--white);
+    padding: 40px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 200px;
+    margin: 20px;
+}
+
+.surprise-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+}
