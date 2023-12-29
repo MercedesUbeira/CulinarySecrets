@@ -1,0 +1,160 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ol, ul, li, figure, figcaption, blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0 0 0 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header */
+header {
+  color: white;
+  background-color: #f42b03;
+
+  background-image: linear-gradient(316deg, #f42b03 0%, #ffbe0b 74%);
+
+  text-align: center;
+  padding: 0px 0;
+  display: flex;
+  align-items: center;
+  align-content: row;
+  justify-content: center;
+}
+
+.right-side-header {
+  align-items: column;
+}
+
+.logo {
+  max-width: 250px;
+  height: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+nav {
+  background-color: #F1FAEE;
+  padding: 10px 0;
+}
+
+nav ol {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav a {
+  color: #1D3557;
+  text-decoration: none;
+  padding: 10px 20px;
+  transition: background-color 0.3s;
+}
+
+nav a:hover {
+  background-color: #A8DADC;
+}
+
+/* Article section */
+.background {
+  overflow: hidden;
+  max-width: 100%;
+}
+
+
+#image-background{
+  position: absolute;
+  width: 100%;
+  height: 178%;
+  z-index: -1;
+  filter: blur(5px);
+  background-size: auto; 
+}
+
+.article-wrapper {
+  position: relative; /* Required for pseudo-elements */
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px auto;
+}
+
+article {
+  position: relative; /* Make sure articles are positioned above the pseudo-element */
+  background-color: #F1FAEE;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: calc(33.33% - 20px);
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.btn {
+  background-color: #18823f;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background-color: #2A9D8F;
+}
+
+/* Footer */
+footer {
+  background-color: #E63946;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/*  NEED TO MAKE RESPONSIVE DESIGN FOR PHONE AND TABLET */
+
