@@ -21,6 +21,11 @@
     text-align: center;
 }
 
+#title-of-section {
+    color: red;
+    margin-left: 6%;
+    margin-top: 3%;
+}
 
 .cards {
     display: flex;
@@ -64,4 +69,6 @@
     margin: 20px auto;
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #D9AE2E;
+    border-radius: 10x;
 }
