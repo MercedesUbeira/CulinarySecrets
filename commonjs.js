@@ -16,8 +16,8 @@ function includeHTML(filePath, targetId) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    includeHTML("header.html", "header");
-    includeHTML("footer.html", "footer");
+    includeHTML("/FirstLevel/header.html", "header");
+    includeHTML("/FirstLevel/footer.html", "footer");
 });
 
 //Function for the "Begin to Savor" btn that scrolls down to the categories.

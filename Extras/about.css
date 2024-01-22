@@ -1,0 +1,55 @@
+#container {
+    display: flex;
+    width: 100%;
+}
+
+#image-container {
+    flex: 0 0 auto; /* This prevents the image container from growing */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-container {
+    flex: 1;
+    padding: 20px;
+
+}
+
+#text-container h2 {
+    color: #333;
+}
+
+#text-container p {
+    color: #666;
+    line-height: 1.5;
+}
+
+#text-container .mission {
+    margin-top: 20px;
+}
+
+#text-container .safety {
+    margin-top: 40px;
+}
+
+#text-container .powered-by {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+}
+
+#text-container .powered-by img {
+    margin-right: 10px;
+}
+
+#bsas {
+    border-radius: 50px;
+    padding: 30px;
+    align-items: center;
+}
+
+.small-imgs {
+    max-width: 15%;
+    max-height: auto;
+}

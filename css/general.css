@@ -27,8 +27,8 @@ header {
 }
 
 .logo img {
-    max-height: 100%; 
-    max-width: 100%; 
+    max-height: 150px; 
+    max-width: 50%; 
 }
 
 nav ul {
@@ -48,35 +48,57 @@ nav ul li a {
 footer {
     display: flex;
     flex-direction: column;
-    padding: 80px;
+    padding: 10px;
     background-color: var(--main-blue);
-    
+    margin: 0; 
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
-    margin-right: 2%;
+    justify-content: space-around; 
 }
 
 .footer-left,
 .footer-middle,
 .footer-right {
-    width: 150px;
-    }
-    
+    flex: 1;
+    max-width: 300px;
+}
+
+.footer-content .footer-right ul,
+.footer-content .footer-middle ul {
+    padding: 0; 
+}
+
 .footer-content .footer-right ul li,
 .footer-content .footer-middle ul li {
     list-style-type: none;
+    text-align: left;
+    margin-bottom: 9px;
+    display: flex; /* Use flexbox to align icon and text horizontally */
+    align-items: center; 
+}
+
+
+.footer-content .contact ul li i {
+    margin-right: 5px; /* Add some space between the icon and text */
 }
 
 .footer-middle {
-    text-align: center;
+    text-align: left;
 }
 
-.footer-bottom {
-    text-align: center;
-    padding: 10px;
+.footer-content-bottom {
+    padding: 5px;
     background-color: var(--main-blue);
     color: white;
+    justify-content: space-evenly; /* Center the text in the middle by default */
+    display: flex;
 }
+
+
+
+hr {
+    border: 1px solid #ccc; /* You can adjust the color and thickness of the line */
+    margin: 10px 50px; /* Add margin for spacing above and below the line */
+  }
