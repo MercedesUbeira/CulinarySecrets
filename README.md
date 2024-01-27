@@ -1,11 +1,11 @@
 # CULINARY SECRETS 
- MULTIMEDIA DESIGN - SCHOOL PROJECT
+ MULTIMEDIA DESIGN - UNIVERSITY PROJECT
 
 ![Culinary Secrets Logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.bekiaviajes.com%2Farticulos%2Fportada%2F77000%2F77026-h.jpg&f=1&nofb=1&ipt=61f4ce42888dded74b0d24aa59de0ad888aeaf6f97776414f4f438088f84c3b5&ipo=images)
 
 ## Overview
 
-Culinary Secrets is a digital solution developed as a school project developed to address the challenges faced by travelers in navigating the city's culinary landscape. The platform serves as a trustworthy guide, providing users with accurate and reliable information to explore hidden culinary gems while minimizing the risk of falling victim to scams.
+Culinary Secrets is a digital solution developed as a university project developed to address the challenges faced by travelers in navigating the city's culinary landscape. The platform serves as a trustworthy guide, providing users with accurate and reliable information to explore hidden culinary gems while minimizing the risk of falling victim to scams.
 
 ## Key Features
 
