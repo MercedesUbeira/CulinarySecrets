@@ -1,4 +1,4 @@
-# CULINARY SECRETS - BUENOS AIRES TRAVEL SOLUTION
+# CULINARY SECRETS - MULTIMEDIA DESIGN - SCHOOL PROJECT
 
 ![Culinary Secrets Logo](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimg.bekiaviajes.com%2Farticulos%2Fportada%2F77000%2F77026-h.jpg&f=1&nofb=1&ipt=61f4ce42888dded74b0d24aa59de0ad888aeaf6f97776414f4f438088f84c3b5&ipo=images)
 
