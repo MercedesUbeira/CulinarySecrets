@@ -10,7 +10,6 @@ body {
 
 .content {
     position: relative;
-    text-align: center;
     color: white;
     z-index: 2;
 }
@@ -39,10 +38,6 @@ body {
     height: 100%;
     background-color: var(--overlay-color);
     z-index: 1;
-}
-
-.content-section {
-    text-align: center;
 }
 
 #title-of-section {
@@ -81,6 +76,7 @@ body {
     background: var(--yellow);
     color: white;
     padding: 10px;
+    /* Adjusted text-align to left */
     text-align: left;
 }
 
