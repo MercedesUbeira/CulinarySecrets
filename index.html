@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,45 +11,47 @@
 
 <body>
     <div id="header"></div>
-    
+
     <section id="home-section" class="home-section">
         <div class="background-image">
-            <!-- background empanadaaa -->
+            <img src="images/background.jpeg">
             <div class="content">
                 <h1>Culinary Secrets</h1>
-                <p>Taste the Unknown</p>
-                <button onclick="scrollToContent()">Scroll Down</button>
+                <p>Dive into the clandestine world of Buenos Aires' culinary treasures, where every dish tells a story, and every bite is a revelation. Taste the city like never before.</p>
+                <button onclick="scrollToContent()">Begin to Savor</button>
             </div>
         </div>
     </section>
-
     <h1 id="title-">Categories</h1>
     <section id="content" class="content-section">
         <div class="cards">
-            <div class="card"><img src="images/indexImages/restaurants.jpg">
+            <a href="http://127.0.0.1:5500/SecondLevel/restaurantsPage.html" class="card">
+                <img src="images/indexImages/restaurants.jpg">
                 <div class="card-content">
                     <h2>Restaurants</h2>
                 </div>
-            </div>
-            <div class="card"><img src="images/indexImages/bars.jpg">
+            </a>
+            <a href="/Extras/404.html" class="card">
+                <img src="images/indexImages/bars.jpg">
                 <div class="card-content">
                     <h2>Bars</h2>
                 </div>
-            </div>
-            <div class="card"><img src="images/indexImages/streetFood.jpg">
+            </a>
+            <a href="/Extras/404.html" class="card">
+                <img src="images/indexImages/streetFood.jpg">
                 <div class="card-content">
                     <h2>Street Food</h2>
                 </div>
-            </div>
-            <div class="card"><img src="images/indexImages/cafeterias.jpg">
+            </a>
+            <a href="/Extras/404.html" class="card">
+                <img src="images/indexImages/cafeterias.jpg">
                 <div class="card-content">
                     <h2>Cafeterias</h2>
                 </div>
-            </div>
+            </a>
         </div>
         <button class="surprise-button">Surprise Me</button>
     </section>
-<!-- I know that the right way to do this is to have a footer tag, but since the JS function is calling it with the targetID, I need it to be a div with an ID. -->
     <footer id="footer"></footer>
 
     <script src="commonjs.js"></script>

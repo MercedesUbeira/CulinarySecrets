@@ -28,3 +28,10 @@ function scrollToContent() {
         behavior: 'smooth'
     });
 }
+
+
+function toggleMenu() {
+        var navList = document.querySelector('nav ul');
+        navList.classList.toggle('show');
+    }
+
