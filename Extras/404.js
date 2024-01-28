@@ -1,28 +1,66 @@
 document.addEventListener('DOMContentLoaded', function () {
     const player = document.getElementById('player');
     const destination = document.getElementById('destination');
+    let isDragging = false;
+    let isGameWon = false;
+    
+//this will noy only work with the arrows in the computer, but also for touch in the phone! 
+
+    player.addEventListener('touchstart', startDrag);
+    player.addEventListener('touchmove', drag);
+    player.addEventListener('touchend', endDrag);
 
     document.addEventListener('keydown', movePlayer);
 
-    function movePlayer(e) {
+    function startDrag(e) {
+        isDragging = true;
+    }
+
+    function drag(e) {
+        if (isDragging) {
+            const touch = e.touches[0];
+            movePlayerByTouch(touch.clientX, touch.clientY);
+        }
+    }
+
+    function endDrag() {
+        isDragging = false;
+        checkCollision();
+    }
+
+    function movePlayerByTouch(x, y) {
         const speed = 10;
 
-        switch (e.key) {
-            case 'ArrowUp':
-                player.style.top = Math.max(0, player.offsetTop - speed) + 'px';
-                break;
-            case 'ArrowDown':
-                player.style.top = Math.min(window.innerHeight - player.clientHeight, player.offsetTop + speed) + 'px';
-                break;
-            case 'ArrowLeft':
-                player.style.left = Math.max(0, player.offsetLeft - speed) + 'px';
-                break;
-            case 'ArrowRight':
-                player.style.left = Math.min(window.innerWidth - player.clientWidth, player.offsetLeft + speed) + 'px';
-                break;
-        }
+        const playerRect = player.getBoundingClientRect();
 
-        checkCollision();
+        const newX = Math.max(0, Math.min(window.innerWidth - playerRect.width, x - playerRect.width / 2));
+        const newY = Math.max(0, Math.min(window.innerHeight - playerRect.height, y - playerRect.height / 2));
+
+        player.style.left = newX + 'px';
+        player.style.top = newY + 'px';
+    }
+
+    function movePlayer(e) {
+        if (!isDragging) {
+            const speed = 10;
+
+            switch (e.key) {
+                case 'ArrowUp':
+                    player.style.top = Math.max(0, player.offsetTop - speed) + 'px';
+                    break;
+                case 'ArrowDown':
+                    player.style.top = Math.min(window.innerHeight - player.clientHeight, player.offsetTop + speed) + 'px';
+                    break;
+                case 'ArrowLeft':
+                    player.style.left = Math.max(0, player.offsetLeft - speed) + 'px';
+                    break;
+                case 'ArrowRight':
+                    player.style.left = Math.min(window.innerWidth - player.clientWidth, player.offsetLeft + speed) + 'px';
+                    break;
+            }
+
+            checkCollision();
+        }
     }
 
     function checkCollision() {
@@ -35,24 +73,11 @@ document.addEventListener('DOMContentLoaded', function () {
             playerRect.top < destinationRect.bottom &&
             playerRect.bottom > destinationRect.top
         ) {
-            alert("Congratulations! You made it! Now let's head back to the main page");
-            resetGame();
+            if (!isGameWon) {
+                isGameWon = true;
+                alert("Congratulations! You made it! Now let's head back to the main page");
+                window.location.href = '/index.html';
+            }
         }
     }
-
-
-    function resetGame() {
-        // Set player at the left bottom corner
-        player.style.top = (window.innerHeight - player.clientHeight) + 'px';
-        player.style.left = '0';
-    
-        // Set destination at the top
-        destination.style.top = '0';
-        destination.style.left = Math.random() * (window.innerWidth - destination.clientWidth) + 'px';
-    
-        // Show congratulations message and redirect to index.html after OK is clicked
-        if (confirm) {
-            window.location.href = '/index.html';
-        }}
-    
 });
