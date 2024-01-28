@@ -1,6 +1,5 @@
 //Since all the pages have header and footer, I figured that it would be easier to use to have one file for header, one for footer and one js that can be applied to all pages.
 
-
 function includeHTML(filePath, targetId) {
     fetch(filePath)
         .then(response => {
@@ -40,21 +39,19 @@ function getRandomIndex(array) {
     return Math.floor(Math.random() * array.length);
 }
 
-// Function to navigate to a random page
 function goToRandomPage() {
-    // List of pages you want to link to
+   
     const pages = [
         "/ThirdLevel/bellagamba.html",
-        "/ThirdLevel/elBohemio.html"
-        // Add more pages if needed
+        "/ThirdLevel/elBohemio.html",
+        "/ThirdLevel/laEscondida.html",
+        "/ThirdLevel/mercadoDeMayo.html",
+        "/ThirdLevel/saboresAutenticos.html",
+        "/ThirdLevel/rinconCulinario.html"
+     
     ];
 
-    // Get a random index
     const randomIndex = getRandomIndex(pages);
-
-    // Construct the full URL of the randomly selected page
     const randomPage = pages[randomIndex];
-
-    // Navigate to the random page
     window.location.href = randomPage;
 }
