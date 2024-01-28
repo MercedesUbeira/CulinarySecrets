@@ -21,7 +21,7 @@ The development of Culinary Secrets followed the Double Diamond diagram, a desig
 
 ## Getting Started
 
-To use Culinary Secrets, you can visit [add the URL when I have it](add URL when I have it).
+To use Culinary Secrets, you can visit [culinarysecrets.netlify.app]([add URL when I have it](https://culinarysecrets.netlify.app/)).
 
 ## License
 
