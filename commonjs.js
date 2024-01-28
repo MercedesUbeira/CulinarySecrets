@@ -35,3 +35,26 @@ function toggleMenu() {
         navList.classList.toggle('show');
     }
 
+//FOR THE BUTTON SURPRISE MEEE
+function getRandomIndex(array) {
+    return Math.floor(Math.random() * array.length);
+}
+
+// Function to navigate to a random page
+function goToRandomPage() {
+    // List of pages you want to link to
+    const pages = [
+        "/ThirdLevel/bellagamba.html",
+        "/ThirdLevel/elBohemio.html"
+        // Add more pages if needed
+    ];
+
+    // Get a random index
+    const randomIndex = getRandomIndex(pages);
+
+    // Construct the full URL of the randomly selected page
+    const randomPage = pages[randomIndex];
+
+    // Navigate to the random page
+    window.location.href = randomPage;
+}
