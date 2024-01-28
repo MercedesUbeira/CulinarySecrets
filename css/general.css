@@ -99,13 +99,15 @@ hr {
     border: 1px solid #ccc; 
     margin: 10px 50px; }
 
+/* Media Queries for responsiveness */
+
 @media only screen and (max-width: 768px) {
     nav ul {
         display: none;
         flex-direction: column;
         text-align: center;
         position: absolute;
-        top: 10vh; 
+        top: 10vh;
         left: 0;
         right: 0;
         background-color: var(--main-blue);
@@ -129,7 +131,7 @@ hr {
         display: block;
         cursor: pointer;
         color: var(--white);
-        font-size: 40px; 
+        font-size: 40px;
         position: absolute;
     }
 
@@ -142,16 +144,38 @@ hr {
     }
 
     .logo img {
-        max-height: 100px; 
+        max-height: 100px;
         max-width: 80%;
         align-self: center;
     }
-}
 
+    footer {
+        flex-direction: column;
+        align-items: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+        flex: 1;
+        max-width: 100%; 
+        text-align: center; }
+
+    .footer-content-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
 
 /* Media Query to hide burger menu on desktop */
 @media only screen and (min-width: 769px) {
-    nav ul.show, .menu-toggle {
+    nav ul.show,
+    .menu-toggle {
         display: none;
     }
 

@@ -4,7 +4,7 @@
 }
 
 #image-container {
-    flex: 0 0 auto; /* This prevents the image container from growing */
+    flex: 0 0 auto; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,4 +52,19 @@
 .small-imgs {
     max-width: 15%;
     max-height: auto;
+}
+
+@media screen and (max-width: 767px) {
+    #container {
+        flex-direction: column;
+    }
+
+    #text-container {
+        order: 2; 
+    }
+
+    #image-container {
+        order: 1; 
+    }
+
 }
