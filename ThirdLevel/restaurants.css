@@ -1,0 +1,70 @@
+.container {
+  display: flex;
+  width: 100%;
+  margin: 20px; 
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.big-image {
+  width: 95%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.small-images {
+  display: flex;
+  margin-top: 10px;
+}
+
+.small-image {
+  width: 30%;
+  margin: 0 5px;
+  border-radius: 15px;
+}
+
+.info-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #425466;
+}
+
+.subtitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #425466; 
+}
+
+.text {
+  margin-top: 10px;
+  line-height: 1.5;
+  color: #425466; 
+}
+
+.address {
+  margin-top: 10px;
+  color: #425466; 
+}
+
+.contact-info {
+  margin-top: 20px;
+  color: #425466; 
+}
+
+.page-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #425466;
+  margin-bottom: 10px;
+}
